@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Biblioteka {
     private String emri;
-    private Libri[] librat;
+    public Libri[] librat;
     private int index;
     private Autori autoret;
     public Biblioteka(String emri, int nrLibrave) {

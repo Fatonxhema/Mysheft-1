@@ -1,45 +1,12 @@
-import java.util.Iterator;
-import java.util.List;
-import java.util.Scanner;
-
 
 public class Biblioteka {
     private String emri;
-    public Libri[] librat;
+    private Libri[] librat;
     private int index;
-    private Autori autoret;
     public Biblioteka(String emri, int nrLibrave) {
         this.emri = emri;
         librat =  new Libri[nrLibrave];
 
-    }
-    public boolean contains(String input){
-        if(librat == null){
-            System.out.println("Nuk ka libra ne varg");
-            return false;
-        }
-        if(librat.length != 0){
-            for(int i=0;i<index;i++){
-                if(librat[i].equals(input)){
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-    public boolean containsAutorin(String input){
-        if(autoret == null){
-            System.out.println("Nuk ka libra ne varg");
-            return false;
-        }
-        if(librat.length != 0){
-            for(int i=0;i<index;i++){
-                if(librat[i].equals(input)){
-                    return true;
-                }
-            }
-        }
-        return false;
     }
 
     public boolean egzistonLibri(Libri l){
